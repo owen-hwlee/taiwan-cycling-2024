@@ -19,9 +19,9 @@ const config = {
 			assets: 'build',
 			fallback: '404.html'
 		}),
-		paths: {
-			base: process.env.NODE_ENV === 'development' ? '' : process.env.BASE_PATH
-		}
+		// paths: {
+		// 	base: process.env.NODE_ENV === 'development' ? '' : process.env.BASE_PATH
+		// }
 	}
 };
 
