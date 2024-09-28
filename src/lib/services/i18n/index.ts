@@ -1,4 +1,4 @@
-import { init, getLocaleFromNavigator, register, addMessages, locale } from 'svelte-i18n';
+import { init, addMessages, locale } from 'svelte-i18n';
 import en from '../../../locales/en.json';
 import zh_Hant_HK from '../../../locales/zh-Hant-HK.json';
 import zh_Hant_TW from '../../../locales/zh-Hant-TW.json';

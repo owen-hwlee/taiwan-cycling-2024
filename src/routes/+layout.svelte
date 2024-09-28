@@ -4,6 +4,7 @@
 	import Header from '$lib/components/Header';
 	import '../app.css';
 	import { i18n } from '../lib/services/i18n';
+	import { getLocaleFromNavigator } from 'svelte-i18n';
 
 	i18n.init();
 
@@ -26,11 +27,11 @@
 		i18n.setCurrentLocale(initialLocale);
 	}
 
-	i18n.locale.subscribe((value) => {
-		if (browser) {
-			window.localStorage.setItem("locale", value!);
-		}
-	});
+	// i18n.locale.subscribe((value) => {
+	// 	if (browser) {
+	// 		window.localStorage.setItem("locale", value!);
+	// 	}
+	// });
 </script>
 
 <svelte:head>

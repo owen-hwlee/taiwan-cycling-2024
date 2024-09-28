@@ -11,6 +11,7 @@
 
 	const changeLocales = (event): void => {
 		i18n.setCurrentLocale(event.target.value);
+		window.localStorage.setItem("locale", event.target.value);
 	};
 </script>
 
