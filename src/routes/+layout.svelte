@@ -11,20 +11,21 @@
 	if (browser) {
 		let initialLocale = window.localStorage.getItem("locale");
 		if (initialLocale === null) {
-			initialLocale = i18n.convertToSupportedLocale(getLocaleFromNavigator() ?? 'en');
+			initialLocale = i18n.convertToSupportedLocale(navigator.language ?? 'en');
 			if (!Object.keys(i18n.supportedLocales).includes(initialLocale)) {
 				if (initialLocale.includes('zh')) {
 					alert(`不好意思，本網頁僅支援繁體中文。`);
 					initialLocale = 'zh-Hant-TW';
 				} else {
 					alert(
-						`Sorry, your browser locale is detected as "${getLocaleFromNavigator()}", which is unfortunately an unsupported language. Falling back to English.`
+						`Sorry, your browser locale is detected as "${navigator.langugage}", which is unfortunately an unsupported language. Falling back to English.`
 					);
 					initialLocale = 'en';
 				}
 			}
 		}
 		i18n.setCurrentLocale(initialLocale);
+		window.localStorage.setItem("locale", initialLocale);
 	}
 
 	// i18n.locale.subscribe((value) => {
