@@ -1,5 +1,5 @@
 <script>
-
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -22,7 +22,7 @@
 		try editing <strong>src/routes/+page.svelte</strong>
 	</h2>
 
-	<p>See my reflections of this trip: <a href="/reflections">Reflections</a></p>
+	<p>See my reflections of this trip: <a href="{base}/reflections">Reflections</a></p>
 
 	<!-- <Counter /> -->
 </section>
