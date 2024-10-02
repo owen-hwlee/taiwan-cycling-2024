@@ -1,10 +1,6 @@
 <script>
-	import { base } from '$app/paths';
+	import { base } from "$app/paths";
 </script>
-
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
 
 <section>
 	<h1>

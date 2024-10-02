@@ -1,3 +1,42 @@
 {
-	"hi": "香港人，你哋都可以輕鬆環島！"
+	"appname": "單車環台",
+	"header": {
+		"title": "Owen's Extended Cycling Around Taiwan 2024"
+	},
+	"footer": {
+		"svelte": "Built with",
+		"footnote": "© {{year}} Lee Ho Wan Owen. All rights reserved."
+	},
+	"pages": {
+		"home": {
+			"title": "首頁",
+			"description": "",
+			"keywords": "",
+			"content": ""
+		},
+		"prep": {
+			"title": "",
+			"description": "",
+			"keywords": "",
+			"content": ""
+		},
+		"trip": {
+			"day01": {}
+		},
+		"reflections": {
+			"title": "完trip心情",
+			"description": "",
+			"keywords": "",
+			"content": "香港人，你哋都可以輕鬆環島！"
+		},
+		"404": {
+			"title": "404 - Cycling Around Taiwan",
+			"description": "",
+			"keywords": "",
+			"content": "This URL does not exist"
+		}
+	},
+	"components": {
+		"currency": {}
+	}
 }

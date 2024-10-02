@@ -1,3 +1,42 @@
 {
-	"hi": "It is honestly not too difficult"
+	"appname": "Cycling Around Taiwan",
+	"header": {
+		"title": "Owen's Extended Cycling Around Taiwan 2024"
+	},
+	"footer": {
+		"svelte": "Built with",
+		"footnote": "© {{year}} Lee Ho Wan Owen. All rights reserved."
+	},
+	"pages": {
+		"home": {
+			"title": "Home",
+			"description": "",
+			"keywords": "",
+			"content": ""
+		},
+		"prep": {
+			"title": "Preparations",
+			"description": "",
+			"keywords": "",
+			"content": ""
+		},
+		"trip": {
+			"day01": {}
+		},
+		"reflections": {
+			"title": "Reflections",
+			"description": "",
+			"keywords": "",
+			"content": "Honestly not impossible to achieve, you can too!"
+		},
+		"404": {
+			"title": "404",
+			"description": "",
+			"keywords": "",
+			"content": "This URL does not exist"
+		}
+	},
+	"components": {
+		"currency": {}
+	}
 }

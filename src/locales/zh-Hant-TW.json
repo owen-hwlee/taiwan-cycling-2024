@@ -1,3 +1,42 @@
 {
-	"hi": "台灣人騎一騎可以回家睡誒，一定可以環島吧！"
+	"appname": "腳踏車環島手札",
+	"header": {
+		"title": "Owen's Extended Cycling Around Taiwan 2024"
+	},
+	"footer": {
+		"svelte": "Built with",
+		"footnote": "© {{year}} Lee Ho Wan Owen. All rights reserved."
+	},
+	"pages": {
+		"home": {
+			"title": "首頁",
+			"description": "",
+			"keywords": "",
+			"content": ""
+		},
+		"prep": {
+			"title": "",
+			"description": "",
+			"keywords": "",
+			"content": ""
+		},
+		"trip": {
+			"day01": {}
+		},
+		"reflections": {
+			"title": "感想",
+			"description": "",
+			"keywords": "",
+			"content": "台灣人騎一騎可以回家睡誒，一定可以環島吧！"
+		},
+		"404": {
+			"title": "404",
+			"description": "",
+			"keywords": "",
+			"content": "This URL does not exist"
+		}
+	},
+	"components": {
+		"currency": {}
+	}
 }
