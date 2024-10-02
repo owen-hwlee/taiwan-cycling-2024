@@ -4,14 +4,13 @@
 	import Header from '$lib/components/Header';
 	import '../app.css';
 	import { i18n } from '../lib/services/i18n';
-	import { getLocaleFromNavigator } from 'svelte-i18n';
 
 	i18n.init();
 
 	if (browser) {
 		let initialLocale = window.localStorage.getItem("locale");
 		if (initialLocale === null) {
-			initialLocale = i18n.convertToSupportedLocale(navigator.language ?? 'en');
+			initialLocale = i18n.convertToSupportedLocale(navigator.language ?? 'zh-Hant-TW');
 			if (!Object.keys(i18n.supportedLocales).includes(initialLocale)) {
 				if (initialLocale.includes('zh')) {
 					alert(`不好意思，本網頁僅支援繁體中文。`);

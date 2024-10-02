@@ -19,7 +19,7 @@ export const i18n = {
 		addMessages('zh-Hant-TW', zh_Hant_TW);
 
 		init({
-			fallbackLocale: 'en',
+			fallbackLocale: 'zh-Hant-TW',
 			// initialLocale: i18n.convertToSupportedLocale(getLocaleFromNavigator() ?? 'en'),
 		});
 	},
