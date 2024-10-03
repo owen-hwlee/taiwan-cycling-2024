@@ -38,11 +38,11 @@
 
 	$: pageName =
 		$page.url.pathname
-			.replace(base + "/", "")			// remove domain
 			.replace("index.html", "")			// remove index.html (if exists)
-			.slice(0, -1)						// remove trailing "/"
-			.replace("/", ".")					// cater to cases like ~/trip/day01/
-		|| "home";								// empty means home page 
+			.replaceAll("/", " ")				// convert / to whitespace
+			.trim()								// ... in order to use trim() to remove all leading and trailing /
+			.replaceAll(" ", ".")				// cater to cases like ~/trip/day01/, JSON structured as .trip.day01.
+		|| "home";								// empty means home page
 
 	$: title = `${$t(`pages.${pageName}.title`)} - ${$t("appname")}`;
 </script>
