@@ -38,6 +38,7 @@
 
 	$: pageName =
 		$page.url.pathname
+			.replace(base + "/", "")			// remove GitHub Pages website first subpath
 			.replace("index.html", "")			// remove index.html (if exists)
 			.replaceAll("/", " ")				// convert / to whitespace
 			.trim()								// ... in order to use trim() to remove all leading and trailing /
