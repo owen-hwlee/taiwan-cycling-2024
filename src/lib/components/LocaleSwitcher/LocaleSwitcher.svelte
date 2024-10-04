@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
-	import { get } from 'svelte/store';
-	import { i18n } from '$lib/services/i18n';
+	import { browser } from "$app/environment";
+	import { get } from "svelte/store";
+	import { i18n } from "$lib/services/i18n";
 
 	$: selectedLocale = get(i18n.locale);
 
@@ -27,7 +27,25 @@
 	.locale-switcher {
 	}
 
+	.locale-switcher select:after {
+		content: "▼"; /* Custom arrow icon */
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+		pointer-events: none; /* Arrow should not interfere with clicks */
+		/* color: #777; */
+		font-size: 14px;
+	}
+
 	.locale-switcher-select {
+		padding: 10px 40px 10px 12px; /* Adds padding with space for custom arrow */
+		border: 1px solid #ddd; /* Subtle border */
+		border-radius: 6px; /* Rounded corners */
+		background-color: #f8f9fa; /* Light background */
+		color: #333; /* Text color */
+		transition: all 0.3s ease; /* Smooth transition on focus */
+		cursor: pointer;
 	}
 
 	.locale-switcher-option {
