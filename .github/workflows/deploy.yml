@@ -2,12 +2,34 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'master'
+    branches: 
+      - master
+  pull_request:
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
-  build_site:
+  validate_deployment:
+    name: Check Deployment Necessity
     runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      startsWith(github.event.head_commit.message, 'feat') ||         
+      startsWith(github.event.head_commit.message, 'fix') ||
+      startsWith(github.event.head_commit.message, 'refactor') ||
+      startsWith(github.event.head_commit.message, 'perf') ||
+      startsWith(github.event.head_commit.message, 'build') ||
+      startsWith(github.event.head_commit.message, 'ops') ||
+      startsWith(github.event.head_commit.message, 'Revert ')
+    # manually triggered deployment must run (workflow_dispatch); OR
+    # on push or PR, check if the commit nature is worth starting a job
+
+  build_site:
+    needs: validate_deployment
+    name: Build Static Site
+    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,6 +63,7 @@ jobs:
 
   deploy:
     needs: build_site
+    name: Deploy Site to GitHub Pages
     runs-on: ubuntu-latest
 
     permissions:
