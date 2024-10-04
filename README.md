@@ -2,7 +2,7 @@
 
 This project aims to write a simple blog on my cycling trip around Taiwan in June 2024.
 
-The website is currently Work-In-Progress, and will be updated from time to time. This unfinished repository is public because I would like to serve the website on GitHub Pages, and setting up the CI-CD workflow first with some starter code allows me to understand what type of code I can and cannot write to create a static site with the modern web framework Svelte.
+The website is currently <span style="color: red;">Work-In-Progress</span>, and will be updated from time to time. This unfinished repository is public because I would like to serve the website on GitHub Pages, and setting up the CI-CD workflow first with some starter code allows me to understand what type of code I can and cannot write to create a static site with the modern web framework Svelte.
 
 ## Purpose
 

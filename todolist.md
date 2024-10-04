@@ -1,8 +1,8 @@
 # TO-DO LIST
 
-<!-- ## Bugs -->
+## Bugs
 
-<!-- - [ ] To be added -->
+- [x] Multi-lingual title doesn't work in prod
 
 ## Task List
 
@@ -12,15 +12,20 @@
 - [x] Design file structure
 - [ ] Multi-lingual
   - [x] Language switching infrastructure
+    - [ ] Switch to embedding locale in URL
+      - [ ] Investigate how to properly write internal links
   - [ ] Resource JSON files
     - [ ] `en`
     - [ ] `zh-Hant-HK`
     - [ ] `zh-Hant-TW`
 - [ ] SEO
-  - [ ] Titles
+  - [x] Titles
   - [ ] Descriptions
-  - [ ] Other SEO tag adjustments
+  - [ ] Other SEO adjustments
+  - [ ] og:image and relevant touch-ups
 - [ ] Responsive Web Design
+- [ ] Dark mode
+- [ ] Mobile devices add to home screen support
 
 ### Header
 
@@ -52,6 +57,11 @@
   - [ ] Day 13
   - [ ] Day 14
 - [ ] Reflections page
+- [ ] Story page
+- [ ] About us cyclists
+- [ ] Advice
+  - [ ] Cycling in Taiwan (in general)
+  - [ ] Cycling trip
 - [ ] 404.html
 
 ### Components
@@ -63,8 +73,13 @@
 - [ ] Component displaying photo with caption
 - [ ] Component containing day trip content
 - [ ] Shareable title
+- [ ] Google map embed displaying location (could be store or restaurant we visited)
 
 ### Assets
 
-- [ ] All map GPX files
-- [ ] Photos
+- Bundled assets
+  - [ ] All map GPX files
+  - [ ] Photos
+- Static
+  - [ ] Icon
+  - [ ] og:image
