@@ -25,6 +25,10 @@ jobs:
     # manually triggered deployment must run (workflow_dispatch); OR
     # on push or PR, check if the commit nature is worth starting a job
 
+    steps:
+      name: Deployment Necessity Validation
+      run: echo "Conditions met. Commencing Deployment."
+
   build_site:
     needs: validate_deployment
     name: Build Static Site
