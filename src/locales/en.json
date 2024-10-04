@@ -1,5 +1,8 @@
 {
 	"appname": "Cycling Around Taiwan",
+	"meta": {
+		"description": "Story of Owen's 2024 Extended Cycling Around Taiwan"
+	},
 	"header": {
 		"title": "Owen's Extended Cycling Around Taiwan 2024"
 	},
@@ -25,7 +28,7 @@
 		},
 		"reflections": {
 			"title": "Reflections",
-			"description": "",
+			"description": "Reflections - Story of Owen's 2024 Extended Cycling Around Taiwan",
 			"keywords": "",
 			"content": "Honestly not impossible to achieve, you can too!"
 		},

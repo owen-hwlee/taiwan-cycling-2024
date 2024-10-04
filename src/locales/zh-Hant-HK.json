@@ -1,5 +1,8 @@
 {
 	"appname": "單車環台",
+	"meta": {
+		"description": "Owen嘅2024單車四極點大環台故仔"
+	},
 	"header": {
 		"title": "Owen's Extended Cycling Around Taiwan 2024"
 	},
@@ -25,7 +28,7 @@
 		},
 		"reflections": {
 			"title": "完trip心情",
-			"description": "",
+			"description": "完trip心情 - Owen嘅2024單車四極點大環台故仔",
 			"keywords": "",
 			"content": "香港人，你哋都可以輕鬆環島！"
 		},

@@ -46,11 +46,26 @@
 		|| "home";								// empty means home page
 
 	$: title = `${$t(`pages.${pageName}.title`)} - ${$t("appname")}`;
+	// empty or non-existent descriptions will be replaced with the default
+	$: description =
+		$t(`pages.${pageName}.description`) !== `pages.${pageName}.description` &&
+		$t(`pages.${pageName}.description`) !== ""
+			? $t(`pages.${pageName}.description`)
+			: $t(`meta.description`);
+	// TODO: add image
 </script>
 
 <svelte:head>
 	<title>{title}</title>
-	<meta name="description" content="Owen's Extended Cycling Around Taiwan 2024" />
+	<meta name="description" content={description} />
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<!-- <meta property="og:image" content={} /> -->
+	<!-- <meta property="og:image:type" content="image/png" /> -->
+	<!-- <meta property="og:image:height" content={} /> -->
+	<!-- <meta property="og:image:width" content={} /> -->
+	<meta property="og:type" content="website" />
+	<!-- <meta property="og:url" content={} /> -->
 </svelte:head>
 
 <div class="app">

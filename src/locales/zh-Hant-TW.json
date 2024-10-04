@@ -1,5 +1,8 @@
 {
 	"appname": "腳踏車環島手札",
+	"meta": {
+		"description": "Owen的2024腳踏車四極點大環台故事"
+	},
 	"header": {
 		"title": "Owen's Extended Cycling Around Taiwan 2024"
 	},
@@ -25,7 +28,7 @@
 		},
 		"reflections": {
 			"title": "感想",
-			"description": "",
+			"description": "感想 - Owen的2024腳踏車四極點大環台故事",
 			"keywords": "",
 			"content": "台灣人騎一騎可以回家睡誒，一定可以環島吧！"
 		},
